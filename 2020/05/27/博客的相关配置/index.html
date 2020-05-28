@@ -493,24 +493,20 @@
 <p><img src="http://qakwmm4s5.bkt.clouddn.com/3-4.png?attname=" alt=""></p>
 <p><img src="http://qakwmm4s5.bkt.clouddn.com/3-5.png?attname=" alt=""></p>
 <p>看到这个就大功告成了。</p>
-<p>2、<strong>新建仓库(Repository)</strong>:点击<code>create repository</code>按钮。</p>
+<p><strong>2、新建仓库(Repository)</strong>:点击<code>create repository</code>按钮。</p>
 <p>注意仓库名称必须写为<code>username.github.io</code> 其中<code>username</code>是你注册Github使用的用户名。</p>
-<p>3、<strong>查看仓库配置</strong>：点击仓库右上角的<code>Settings</code>选项。</p>
+<p><strong>3、查看仓库配置</strong>：点击仓库右上角的<code>Settings</code>选项。</p>
 <p> 如果发现Github Pages这一部分有<code>Your site is published at https://username.github.io</code>字样，则表明仓库具备了网页展示功能。提醒下：这个新建的仓库就是用来下面保存Hexo博客的各种资源文件的。</p>
 <p>右击屏幕，点击git bash here ，<strong><u>ssh-keygen -t rsa -C “<a href="mailto:you@example.com">you@example.com</a>“</strong></u>（其中双引号的内容修改为你自己在Github上注册的邮箱。过程中当需要用户输入时，可以直接回车。指令执行结果如下图所示。）</p>
 <p><img src="http://qakwmm4s5.bkt.clouddn.com/5-7.png?attname=" alt=""></p>
 <p>图中的<strong>~/ssd/.ssh/id_rsa.pub</strong>文件就是我们需要的,它保存着我们需要的<strong><code>public key</code>。</strong></p>
-<ol start="5">
-<li><strong>Github账户添加SSH公钥</strong>：在Github账户的<code>Settings</code>-&gt; <code>SSH and GPG keys</code>下单击<code>New SSH key</code>，将<code>id_rsa.pub</code>文件中的所有内容拷贝进去。</li>
-</ol>
+<p> <strong>5.Github账户添加SSH公钥</strong>：在Github账户的<code>Settings</code>-&gt; <code>SSH and GPG keys</code>下单击<code>New SSH key</code>，将<code>id_rsa.pub</code>文件中的所有内容拷贝进去。</p>
 <h3 id="二、绑定Hexo和Github"><a href="#二、绑定Hexo和Github" class="headerlink" title="二、绑定Hexo和Github"></a>二、绑定Hexo和Github</h3><p><strong>修改本地站点配置文件</strong>: 打开站点目录（<code>blog\</code>）下的<code>_config.yml</code>文件，将最后一部分修改为</p>
 <p><img src="http://qakwmm4s5.bkt.clouddn.com/3-9.png?attname=" alt=""></p>
 <p>其中username是你的用户名，注意:上述冒号的后面都有一个空格。</p>
-<p>2、<strong>安装关联hexo和git的工具</strong>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure>
-
+<p><strong>2、安装关联hexo和git的工具</strong>:<br><strong>npm install hexo-deployer-git –save</strong></p>
 <h3 id="三、Hexo升天"><a href="#三、Hexo升天" class="headerlink" title="三、Hexo升天"></a>三、Hexo升天</h3><p><strong>1、部署Hexo</strong>：执行以下命令  hexo d (这个命令会将本地博客根目录（<code>blog\</code>）下<code>public</code>文件夹里的所有文件上传至Github上的<code>username/username.github.io.git</code>这个仓库。d:depoly 是部署的意思)。</p>
-<p>2、<strong>博客预览</strong>：在浏览器中输入<code>https://username.github.io</code>,如果看到新页面则大功告成。</p>
+<p><strong>2、博客预览</strong>：在浏览器中输入<code>https://username.github.io</code>,如果看到新页面则大功告成。</p>
 <p>（如果以后写了新的博文后希望更新到Github上的博客,则必须先执行清除本地旧数据（网页）和生成新数据（网页）两个动作、意即依次执行<code>hexo clean</code>和<code>hexo g</code>操作。最后再执行部署动作<code>hexo d</code>）</p>
 
             </div>
