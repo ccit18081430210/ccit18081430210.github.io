@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="自己动手写博文, Hexo">
+    <meta name="keywords" content="hexo如何更换主题, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>自己动手写博文 | Hexo</title>
+    <title>hexo如何更换主题 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">自己动手写博文</h1>
+                    <h1 class="description center-align post-title">hexo如何更换主题</h1>
                 </div>
             </div>
         </div>
@@ -464,7 +464,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-05-26
+                    2020-05-28
                 </div>
                 
 
@@ -480,20 +480,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>  今晚的星星很亮，但我知道你没有在抬头望，仔细想想，这真是星星的损失~</p>
-<p><img src="http://qakwmm4s5.bkt.clouddn.com/timg.jpeg" alt=""></p>
-<h3 id="一、-新建博文"><a href="#一、-新建博文" class="headerlink" title="一、  新建博文"></a>一、  新建博文</h3><p>1、<strong>设置编辑器路径</strong>：在站点根目录（<code>blog\</code>）下新建<code>scripts</code>目录，然后再新建<code>auto_open.js</code>，在文件中填入以下内容：</p>
-<p><img src="http://qakwmm4s5.bkt.clouddn.com/15.png?attname=" alt=""></p>
-<p>2、<strong>新建一篇博文</strong>：执行以下语句</p>
-<p><img src="http://qakwmm4s5.bkt.clouddn.com/11.png" alt=""></p>
-<p>new后面有一个空格，filename是你的博客名字，命令执行完后，就会在_posts下生成一篇名叫filename的新文章。同时你会发现编辑器Typora也打开了，新文章正在等待你的输入！</p>
-<h3 id="二、开始Markdown写作"><a href="#二、开始Markdown写作" class="headerlink" title="二、开始Markdown写作"></a>二、开始Markdown写作</h3><h3 id="三、（本地）查看新博文"><a href="#三、（本地）查看新博文" class="headerlink" title="三、（本地）查看新博文"></a>三、（本地）查看新博文</h3><p>​      <strong>1、清除旧数据</strong>（根目录下的public文件夹存放着旧有博客生成的HTML网页）</p>
-<p>​          <strong>hexo clean</strong></p>
-<p>​      <strong>2、生成新数据</strong>（生成新的HTML网页会存放到public文件夹下）</p>
-<p>​          <strong>hexo g</strong></p>
-<p>​      <strong>3、启动Hexo服务</strong></p>
-<p>​           <strong>hexo s</strong></p>
-<p>​    <strong>4、博客预览</strong>：在浏览器中输入上述网址<code>http://localhost:4000/</code>,如果看到新页面则大功告成。</p>
+                <h3 id="hexo主题"><a href="#hexo主题" class="headerlink" title="hexo主题"></a>hexo主题</h3><h4 id="一、选主题"><a href="#一、选主题" class="headerlink" title="一、选主题"></a>一、选主题</h4><p><strong>官方网址：</strong><a href="https://hexo.io/themes/,选择自己所需的主题。" target="_blank" rel="noopener">https://hexo.io/themes/</a>，选择自己需要的。我选的是<strong>matery</strong>，</p>
+<p>点击<strong>matery</strong>的蓝色字体。</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/5-1.png" alt=""></p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/5-2.jpg" alt=""></p>
+<p>2、获得该主题仓库的下载链接：入该主题的 <strong>GitHub</strong> 主页,然后点击红色线圈的部分，就可以获得该主题仓库的下载链接至剪切板。</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/5-3.jpg" alt=""></p>
+<p><strong>3、下载主题：</strong></p>
+<p>删除根目录下的 themes 目录下一个名为 landscape 的文件夹（我们个人网站默认主题所在位置），删除后在该目录下右击 Git Bash Here，在 Git Bash 窗口中输入：<strong>git clone <a href="https://github.com/blinkfox/hexo-theme-matery.git" target="_blank" rel="noopener">https://github.com/blinkfox/hexo-theme-matery.git</a></strong>，这里的链接为选中的主题的下载链接。</p>
+<h4 id="三、配置主题"><a href="#三、配置主题" class="headerlink" title="三、配置主题"></a>三、配置主题</h4><p>在<strong>blog</strong>目录下的<strong>_comfig.yml</strong>,将原来的主题名称 <strong>landscape</strong>，改为下载下来的主题所在的文件夹名称 <strong>hexo-theme-matery</strong>。</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/5-4.png" alt="">主题启用配置好后，用Git bash here输入<strong>hexo g</strong>来部署主题，<strong>hexo s</strong>本地预览主题，没有问题后用<strong>hexo d</strong>来上传代码。在浏览器中打开自己的个人网页，就能看到修改后的效果，到此，博客的主题更改完成。</p>
 
             </div>
             <hr/>
@@ -519,7 +515,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/05/26/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E5%8D%9A%E6%96%87/">http://yoursite.com/2020/05/26/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E5%8D%9A%E6%96%87/</a>
+                    <a href="http://yoursite.com/2020/05/28/hexo%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/">http://yoursite.com/2020/05/28/hexo%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -721,7 +717,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Tue May 26 2020 15:26:52 GMT+0800',
+    id: 'Thu May 28 2020 23:38:59 GMT+0800',
     owner: 'ccit18081430210.github.io',
     repo: 'ccit18081430210',
     oauth: {
@@ -769,32 +765,34 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2020/05/27/%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/">
+                <a href="/2020/05/28/hexo%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="博客的相关配置">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="hexo如何更换主题">
                         
-                        <span class="card-title">博客的相关配置</span>
+                        <span class="card-title">hexo如何更换主题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            愿你一生欢笑不皱眉，愿我此生无忧不离笑~
+                            hexo主题一、选主题官方网址：https://hexo.io/themes/，选择自己需要的。我选的是matery，
+点击matery的蓝色字体。
 
-就是将本地博客根目录（blog\）下public文件夹里的所有文件上传至Github中的某个特定仓库，然后使用该仓库的Pages功能展示博客页面。
-一、Github的准备1、在浏览器上搜索Gith
+
+2、获得该主题仓库的下载链接：入该主题的 GitHub 主页,然后点击红色线圈的部分，
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -803,6 +801,7 @@ gitment.render('gitment-content');
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -813,27 +812,24 @@ gitment.render('gitment-content');
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/22/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/">
+                <a href="/2020/05/27/~$xo%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="hexo博客的本地搭建">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="~$xo如何快速上传图片">
                         
-                        <span class="card-title">hexo博客的本地搭建</span>
+                        <span class="card-title">~$xo如何快速上传图片</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-一、hexo的环境配置 主要是为下面Hexo的安装运行事先准备一个运行环境，主要包含Node.js和Git两个软件的安装。
-​   ** 1、点击安装**Node.js请选择10以上版本和Git.
-1.登录网址https://nodejs
+                            Windows �û�                                          W i n d o w s   (u7b                                         
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-27
                             </span>
                         <span class="publish-author">
                             
