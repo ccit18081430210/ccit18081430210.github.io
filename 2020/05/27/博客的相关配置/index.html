@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="keywords" content="博客的相关配置, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>博客的相关配置 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">博客的相关配置</h1>
                 </div>
             </div>
         </div>
@@ -464,7 +464,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-05-22
+                    2020-05-27
                 </div>
                 
 
@@ -480,19 +480,38 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+                <p>愿你一生欢笑不皱眉，愿我此生无忧不离笑~</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/timg-1.jpeg" alt=""></p>
+<p>就是将本地博客根目录（<code>blog\</code>）下<code>public</code>文件夹里的所有文件上传至Github中的某个特定仓库，然后使用该仓库的Pages功能展示博客页面。</p>
+<h3 id="一、Github的准备"><a href="#一、Github的准备" class="headerlink" title="一、Github的准备"></a>一、Github的准备</h3><p>1、在浏览器上搜索Github.</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/3-1.png" alt=""></p>
+<p>2、注册Github:右上角的<code>sign in</code>是登录，<code>sign up</code>是注册。</p>
+<p>   登录 Github，输入用户名，邮箱，密码。</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/3-2.png" alt=""></p>
+<p>然后你的邮箱会收到一个验证邮件，点击验证就好了。</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/3-3.png?attname=" alt=""></p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/3-4.png?attname=" alt=""></p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/3-5.png?attname=" alt=""></p>
+<p>看到这个就大功告成了。</p>
+<p>2、<strong>新建仓库(Repository)</strong>:点击<code>create repository</code>按钮。</p>
+<p>注意仓库名称必须写为<code>username.github.io</code> 其中<code>username</code>是你注册Github使用的用户名。</p>
+<p>3、<strong>查看仓库配置</strong>：点击仓库右上角的<code>Settings</code>选项。</p>
+<p> 如果发现Github Pages这一部分有<code>Your site is published at https://username.github.io</code>字样，则表明仓库具备了网页展示功能。提醒下：这个新建的仓库就是用来下面保存Hexo博客的各种资源文件的。</p>
+<p>右击屏幕，点击git bash here ，<strong><u>ssh-keygen -t rsa -C “<a href="mailto:you@example.com">you@example.com</a>“</strong></u>（其中双引号的内容修改为你自己在Github上注册的邮箱。过程中当需要用户输入时，可以直接回车。指令执行结果如下图所示。）</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/5-7.png?attname=" alt=""></p>
+<p>图中的<strong>~/ssd/.ssh/id_rsa.pub</strong>文件就是我们需要的,它保存着我们需要的<strong><code>public key</code>。</strong></p>
+<ol start="5">
+<li><strong>Github账户添加SSH公钥</strong>：在Github账户的<code>Settings</code>-&gt; <code>SSH and GPG keys</code>下单击<code>New SSH key</code>，将<code>id_rsa.pub</code>文件中的所有内容拷贝进去。</li>
+</ol>
+<h3 id="二、绑定Hexo和Github"><a href="#二、绑定Hexo和Github" class="headerlink" title="二、绑定Hexo和Github"></a>二、绑定Hexo和Github</h3><p><strong>修改本地站点配置文件</strong>: 打开站点目录（<code>blog\</code>）下的<code>_config.yml</code>文件，将最后一部分修改为</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/3-9.png?attname=" alt=""></p>
+<p>其中username是你的用户名，注意:上述冒号的后面都有一个空格。</p>
+<p>2、<strong>安装关联hexo和git的工具</strong>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="三、Hexo升天"><a href="#三、Hexo升天" class="headerlink" title="三、Hexo升天"></a>三、Hexo升天</h3><p><strong>1、部署Hexo</strong>：执行以下命令  hexo d (这个命令会将本地博客根目录（<code>blog\</code>）下<code>public</code>文件夹里的所有文件上传至Github上的<code>username/username.github.io.git</code>这个仓库。d:depoly 是部署的意思)。</p>
+<p>2、<strong>博客预览</strong>：在浏览器中输入<code>https://username.github.io</code>,如果看到新页面则大功告成。</p>
+<p>（如果以后写了新的博文后希望更新到Github上的博客,则必须先执行清除本地旧数据（网页）和生成新数据（网页）两个动作、意即依次执行<code>hexo clean</code>和<code>hexo g</code>操作。最后再执行部署动作<code>hexo d</code>）</p>
 
             </div>
             <hr/>
@@ -518,7 +537,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/05/22/hello-world/">http://yoursite.com/2020/05/22/hello-world/</a>
+                    <a href="http://yoursite.com/2020/05/27/%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/">http://yoursite.com/2020/05/27/%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -747,27 +766,29 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/05/22/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/">
+                <a href="/2020/05/27/hexo%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="hexo博客的本地搭建">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="hexo如何快速上传图片">
                         
-                        <span class="card-title">hexo博客的本地搭建</span>
+                        <span class="card-title">hexo如何快速上传图片</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-一、hexo的环境配置 主要是为下面Hexo的安装运行事先准备一个运行环境，主要包含Node.js和Git两个软件的安装。
-​    1、点击安装Node.js请选择10以上版本和Git.
-1.登录网址https://nodejs.org
+图床有很多品牌，比如微博图床、Github图床、七牛图床、阿里云OSS等。我们这里选择七牛图床。
+1、注册登录七牛云-&gt;新建空间-&gt;上传文件-&gt;获取图片网络地址
+
+
+地址复制粘贴至文档：依次输入!、 [] 、()，最后将
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-22
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-27
                         </span>
                         <span class="publish-author">
                             
@@ -784,27 +805,31 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/22/hello-world/">
+                <a href="/2020/05/26/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E5%8D%9A%E6%96%87/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="自己动手写博文">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">自己动手写博文</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                              今晚的星星很亮，但我知道你没有在抬头望，仔细想想，这真是星星的损失~
+
+一、  新建博文1、设置编辑器路径：在站点根目录（blog\）下新建scripts目录，然后再新建auto_open.js，在文件中填入以下内容：
+
+2、新建一篇博
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-26
                             </span>
                         <span class="publish-author">
                             
@@ -814,7 +839,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
