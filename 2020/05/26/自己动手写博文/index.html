@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo博客的本地搭建, Hexo">
+    <meta name="keywords" content="自己动手写博文, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo博客的本地搭建 | Hexo</title>
+    <title>自己动手写博文 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo博客的本地搭建</h1>
+                    <h1 class="description center-align post-title">自己动手写博文</h1>
                 </div>
             </div>
         </div>
@@ -464,7 +464,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-05-22
+                    2020-05-26
                 </div>
                 
 
@@ -480,23 +480,31 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="http://qakwmm4s5.bkt.clouddn.com/1589890089249.png" alt=""></p>
-<h3 id="一、hexo的环境配置"><a href="#一、hexo的环境配置" class="headerlink" title="一、hexo的环境配置"></a>一、hexo的环境配置</h3><p> 主要是为下面Hexo的安装运行事先准备一个运行环境，主要包含Node.js和Git两个软件的安装。</p>
-<p>​   ** 1、点击安装**<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a>请选择10以上版本和Git.</p>
-<p>1.登录网址<a href="https://nodejs.org/en/download/；找到板块Download" target="_blank" rel="noopener">https://nodejs.org/en/download/；找到板块Download</a> 。<br>2.根据电脑的类型，选择相应的版本进行下载（那么如何确定自己电脑的类型呢？解决办法：计算机-&gt;右键-&gt;属性，查找得出本机是64位架构 ）因此，我选择：</p>
-<p>​       <img src="http://qakwmm4s5.bkt.clouddn.com/1-0.png?attname=" alt=""></p>
-<p>安装好后，右击空白屏幕，点击<strong>Git bash here</strong>,输入<strong>npm -v</strong></p>
-<p> ** 2、点击安装<strong><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>,完成后在CMD窗口中输入下面指令:</strong>git**</p>
-<h3 id="二、安装Hexo"><a href="#二、安装Hexo" class="headerlink" title="二、安装Hexo"></a>二、安装Hexo</h3><p>  1、<strong>安装Hexo</strong>: 在CMD窗口使用下面的命令:<strong>npm install hexo-cli -g</strong></p>
-<p>​       如果不放心，可以输入以下指令来核查：<strong>hexo -v</strong></p>
-<p>   2、<strong>创建Hexo博客根目录</strong></p>
-<p>​        因为我要建在D盘：<strong>d:</strong> 回车,然后<strong>md blog</strong>（注意，上述语句会在CMD的当前路径下创建一个名为blog的文件夹。该文件夹后面将保存你的各种博客资源及博文，我们把这个目录简称为根目录。建议将目录生成在你常用的位置）</p>
-<p>​    3、<strong>初始化Hexo博客</strong>：依次执行下面两条命令<strong>cd blog ,hexo init</strong>。（若实验结果出现“Start blogging  with Hexo!”字符串，则表示初始化成功且可以开始写博客了。注意：在初始化Hexo博客之前，必须保证根目录为空,否则无法成功初始化。）</p>
-<h3 id="三、博客（本地）预览"><a href="#三、博客（本地）预览" class="headerlink" title="三、博客（本地）预览"></a>三、博客（本地）预览</h3><p>​    1、<strong>启动Hexo服务</strong></p>
-<p>​         输入<strong>hexo s</strong>。</p>
-<p>​         若结果发现有”Hexo is running at <code>http://localhost:4000/</code>字符串，则表示启动成功，Hexo当前    就运行在上述网址。上述指令中的s表示server。</p>
-<p>2、<strong>博客预览</strong>：在浏览器中输入上述网址<code>http://localhost:4000/</code>,如果看到新页面则大功告成。</p>
-<p>   <img src="http://qakwmm4s5.bkt.clouddn.com/9.png" alt=""></p>
+                <p>  今晚的星星很亮，但我知道你没有在抬头望，仔细想想，这真是星星的损失~</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/timg.jpeg" alt=""></p>
+<h2 id="一、-新建博文"><a href="#一、-新建博文" class="headerlink" title="一、  新建博文"></a>一、  新建博文</h2><p><strong>1、 设置编辑器路径</strong>：在站点根目录(<code>blog/</code>)新建<code>scripts</code>目录，然后再新建<code>auto_open.js</code>，在文件中填入以下内容：</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/15.png?attname=" alt=""></p>
+<p><strong>2、 新建一篇博文</strong>：执行以下语句</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/11.png" alt=""></p>
+<p>new后面有一个空格，filename是你的博客名字，命令执行完后，就会在_posts下生成一篇名叫filename的新文章。同时你会发现编辑器Typora也打开了，新文章正在等待你的输入！</p>
+<h2 id="二、开始Markdown写作"><a href="#二、开始Markdown写作" class="headerlink" title="二、开始Markdown写作"></a>二、开始Markdown写作</h2><p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+<h3 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h3><p>注：标准语法一般在#后跟个空格再写文字，貌似简书不加空格也行。</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/2-1.png" alt=""></p>
+<h3 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h3><ul>
+<li><p><strong>加粗：</strong>要加粗的文字左右分别用两个*号包起来</p>
+</li>
+<li><p><strong>斜体：</strong>要倾斜和加粗的文字左右分别用三个*号包起来</p>
+</li>
+<li><p><strong>删除线：</strong>要加删除线的文字左右分别用两个波浪号包起来</p>
+<p>如：<img src="http://qakwmm4s5.bkt.clouddn.com/2-2.png" alt=""></p>
+</li>
+</ul>
+<h3 id="三、分割线"><a href="#三、分割线" class="headerlink" title="三、分割线"></a>三、分割线</h3><p><img src="http://qakwmm4s5.bkt.clouddn.com/2-3.png" alt=""></p>
+<p>三个或者三个以上的 - 或者 * 都可以。</p>
+<h3 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h3><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>   语法：无序列表用 - + * 任何一种都可以</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/2-4.png" alt=""></p>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>   语法：有序列表 数字加点<br><img src="http://qakwmm4s5.bkt.clouddn.com/2-5.png" alt=""></p>
+<h2 id="三、（本地）查看新博文"><a href="#三、（本地）查看新博文" class="headerlink" title="三、（本地）查看新博文"></a>三、（本地）查看新博文</h2><p><strong>1、  清除旧数据</strong>（根目录下的public文件夹存放着旧有博客生成的HTML网页）<br>   <strong>hexo clean</strong><br><strong>2、  生成新数据</strong>（生成新的HTML网页会存放到public文件夹下）               <strong>hexo g</strong><br><strong>3、 启动Hexo服务</strong><br>   <strong>hexo s</strong><br><strong>4、  博客预览</strong>：在浏览器中输入上述网址  <code>http://localhost:4000/</code>,如果看到新页面则大功告成。</p>
 
             </div>
             <hr/>
@@ -522,7 +530,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/05/22/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/">http://yoursite.com/2020/05/22/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/</a>
+                    <a href="http://yoursite.com/2020/05/26/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E5%8D%9A%E6%96%87/">http://yoursite.com/2020/05/26/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E5%8D%9A%E6%96%87/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -724,7 +732,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Fri May 22 2020 17:49:24 GMT+0800',
+    id: 'Tue May 26 2020 15:26:52 GMT+0800',
     owner: 'ccit18081430210.github.io',
     repo: 'ccit18081430210',
     oauth: {
@@ -776,28 +784,27 @@ gitment.render('gitment-content');
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/05/26/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E5%8D%9A%E6%96%87/">
+                <a href="/2020/05/27/%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="自己动手写博文">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="博客的相关配置">
                         
-                        <span class="card-title">自己动手写博文</span>
+                        <span class="card-title">博客的相关配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                              今晚的星星很亮，但我知道你没有在抬头望，仔细想想，这真是星星的损失~
+                            愿你一生欢笑不皱眉，愿我此生无忧不离笑~
 
-一、  新建博文1、 设置编辑器路径：在站点根目录(blog/)新建scripts目录，然后再新建auto_open.js，在文件中填入以下内容：
-
-2、 新建一篇
+就是将本地博客根目录（blog\）下public文件夹里的所有文件上传至Github中的某个特定仓库，然后使用该仓库的Pages功能展示博客页面。
+一、Github的准备1、在浏览器上搜索Gith
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-26
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-27
                         </span>
                         <span class="publish-author">
                             
@@ -817,19 +824,22 @@ gitment.render('gitment-content');
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/22/hello-world/">
+                <a href="/2020/05/22/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="hexo博客的本地搭建">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">hexo博客的本地搭建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            
+一、hexo的环境配置 主要是为下面Hexo的安装运行事先准备一个运行环境，主要包含Node.js和Git两个软件的安装。
+​   ** 1、点击安装**Node.js请选择10以上版本和Git.
+1.登录网址https://nodejs
                         
                     </div>
                     <div class="publish-info">
