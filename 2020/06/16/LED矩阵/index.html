@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo如何更换主题, Hexo">
+    <meta name="keywords" content="LED矩阵, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo如何更换主题 | Hexo</title>
+    <title>LED矩阵 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo如何更换主题</h1>
+                    <h1 class="description center-align post-title">LED矩阵</h1>
                 </div>
             </div>
         </div>
@@ -464,7 +464,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-05-28
+                    2020-06-16
                 </div>
                 
 
@@ -480,17 +480,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="hexo主题"><a href="#hexo主题" class="headerlink" title="hexo主题"></a>hexo主题</h2><h4 id="一、选主题"><a href="#一、选主题" class="headerlink" title="一、选主题"></a>一、选主题</h4><p><strong>1、官方网址</strong>：<code>https://hexo.io/themes/,选择自己所需的主题</code>,我选的是<strong>matery</strong>，</p>
-<p>点击 <strong>matery</strong> 的蓝色字体。</p>
-<p><img src="http://qakwmm4s5.bkt.clouddn.com/5-1.png" alt=""></p>
-<p><img src="http://qakwmm4s5.bkt.clouddn.com/5-2.jpg" alt=""></p>
-<p><strong>2、获得该主题仓库的下载链接：</strong>进入该主题的 <strong>GitHub</strong> 主页,然后点击红色线圈的部分，就可以获得该主题仓库的下载链接至剪切板。</p>
-<p><img src="http://qakwmm4s5.bkt.clouddn.com/5-3.jpg" alt=""></p>
-<p><strong>3、下载主题：</strong></p>
-<p>删除根目录下的 themes 目录下一个名为 landscape 的文件夹（我们个人网站默认主题所在位置），删除后在该目录下右击 Git Bash Here，在 Git Bash Here 窗口中输入：git clone  <code>https://github.com/blinkfox/hexo-theme-matery.git</code>，这里的链接为选中的主题的下载链接。</p>
-<p>最后你会发现themes 目录下，多了一个文件夹hexo-theme-matery，就说明成功了。</p>
-<h4 id="三、配置主题"><a href="#三、配置主题" class="headerlink" title="三、配置主题"></a>三、配置主题</h4><p>在站点根目录下的_comfig.yml,将原来的主题名称 landscape，改为下载下来的主题所在的文件夹名称 hexo-theme-matery。</p>
-<p><img src="http://qakwmm4s5.bkt.clouddn.com/5-4.png" alt="">主题启用配置好后，用Git bash here输入<strong>hexo g</strong>来部署主题，<strong>hexo s</strong>本地预览主题，没有问题后用<strong>hexo d</strong>来上传代码。在浏览器中打开自己的个人网页，就能看到修改后的效果，到此，博客的主题更改完成。</p>
+                <p>一、打开蓝牙</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/6-0.png" alt=""></p>
+<p>​      首先要看谷歌浏览器是否有蓝牙设备</p>
+<p>​       可以在在谷歌浏览器中输入 <code>chrome://bluetooth-internals</code>检查</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/6-2.png" alt=""></p>
+<p>检查谷歌浏览器是否在70.0.3526.0及以上版本</p>
+<h2 id="二、关于html文件"><a href="#二、关于html文件" class="headerlink" title="二、关于html文件"></a>二、关于html文件</h2><p>我用的Visual Studio Code编写的，新建一个html文件。</p>
+<p>代码：</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/6-9.png" alt=""></p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/6-11.png" alt=""></p>
+<p>点击 Start scan 按钮</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/6-12.png" alt=""></p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/6-7.png" alt=""></p>
+<p>点击配对。</p>
+<p>让后BBC实验板就会出现C，这样就成功了~</p>
+<p><strong>可以显示蓝牙当前连接状态的函数：</strong></p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/6-13.png" alt=""></p>
+<p>在body部分添加一个用来显示的一列两行表格：</p>
+<p><img src="http://qakwmm4s5.bkt.clouddn.com/6-16.png" alt=""></p>
+<p><strong>控制断开的函数</strong></p>
+<p>这个时候打开谷歌,就会发现多了个表格，点击Start scan,就会发现 Connected那个地方由false变成了true，最底下的按钮由链接按钮变成了断开的功能按钮并且板子上出现字母C</p>
+<p>配对之后点击断开按钮（Disconnect），BBC板子上就会出现字母 D</p>
 
             </div>
             <hr/>
@@ -516,7 +527,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/05/28/hexo%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/">http://yoursite.com/2020/05/28/hexo%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</a>
+                    <a href="http://yoursite.com/2020/06/16/LED%E7%9F%A9%E9%98%B5/">http://yoursite.com/2020/06/16/LED%E7%9F%A9%E9%98%B5/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -718,7 +729,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Thu May 28 2020 23:38:59 GMT+0800',
+    id: 'Tue Jun 16 2020 17:14:55 GMT+0800',
     owner: 'ccit18081430210.github.io',
     repo: 'ccit18081430210',
     oauth: {
@@ -766,9 +777,10 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2020/06/16/LED%E7%9F%A9%E9%98%B5/">
                     <div class="card-image">
@@ -792,9 +804,9 @@ gitment.render('gitment-content');
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -803,6 +815,7 @@ gitment.render('gitment-content');
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -813,24 +826,28 @@ gitment.render('gitment-content');
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/27/~$xo%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/">
+                <a href="/2020/05/28/hexo%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="~$xo如何快速上传图片">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="hexo如何更换主题">
                         
-                        <span class="card-title">~$xo如何快速上传图片</span>
+                        <span class="card-title">hexo如何更换主题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Windows �û�                                          W i n d o w s   (u7b                                         
+                            hexo主题一、选主题1、官方网址：https://hexo.io/themes/,选择自己所需的主题,我选的是matery，
+点击 matery 的蓝色字体。
+
+
+2、获得该主题仓库的下载链接：进入该主题的 GitHub 主页,然后点击红
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-28
                             </span>
                         <span class="publish-author">
                             
